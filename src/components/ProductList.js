@@ -9,11 +9,12 @@ function ProductList(props) {
     description,
     category,
     stock,
+    discountPercentage,
   } = props;
 
   return (
     <div className='card'>
-      <div className='img card-image'>
+      <div className='card-image'>
         <img src={thumbnail} />
       </div>
       <div className='card-content'>
@@ -22,7 +23,10 @@ function ProductList(props) {
         <p>{description}</p>
       </div>
       <div className='card-action'>
-        <button class='btn'>buy</button>
+        <span>
+          {price} ({discountPercentage})
+        </span>
+        <button className='btn right-align'>buy</button>
       </div>
     </div>
   );
