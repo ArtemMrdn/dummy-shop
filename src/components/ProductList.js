@@ -1,24 +1,29 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+function ProductList(props) {
+  const {
+    id,
+    thumbnail,
+    title,
+    price,
+    rating,
+    brand,
+    description,
+    category,
+    stock,
+  } = props;
 
-function ProductList({ product }) {
   return (
-    <div className='flex'>
-      {product.map((productItem) => {
-        const { thumbnail, category, title, description, price, stock } =
-          productItem;
-        return (
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant='top' src={thumbnail} />
-            <Card.Body>
-              <Card.Title>{category}</Card.Title>
-              <Card.Subtitle>{title}</Card.Subtitle>
-              <Card.Text>{description}</Card.Text>
-              <Button variant='primary'>Buy (in stock: {stock})</Button>
-            </Card.Body>
-          </Card>
-        );
-      })}
+    <div className='card'>
+      <div className='img card-image'>
+        <img src={thumbnail} />
+      </div>
+      <div className='card-content'>
+        <span className='card-category'>{category}</span>
+        <span className='card-title'>{title}</span>
+        <p>{description}</p>
+      </div>
+      <div className='card-action'>
+        <button class='btn'>buy</button>
+      </div>
     </div>
   );
 }

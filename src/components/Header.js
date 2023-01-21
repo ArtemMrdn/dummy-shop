@@ -1,15 +1,18 @@
-import { Container, Navbar } from "react-bootstrap";
-
-const Header = () => {
+function Header() {
   return (
-    <Navbar bg='dark' variant='dark' style={{ height: 80 }}>
-      <Container>
-        <Navbar.Brand>
-          <a>Shopping Cart</a>
-        </Navbar.Brand>
-      </Container>
-    </Navbar>
+    <nav className='black darken-2'>
+      <div className='nav-wrapper'>
+        <a href='#' className='brand-logo'>
+          Dummy Shop
+        </a>
+        <ul id='nav-mobile' className='right hide-on-med-and-down'>
+          <li>
+            <a href='sass.html'>Repo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
-};
+}
 
 export default Header;
