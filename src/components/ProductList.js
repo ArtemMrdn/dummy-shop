@@ -17,14 +17,12 @@ function ProductList(props) {
       <div className='card-image'>
         <img src={thumbnail} />
       </div>
-      <div className='content card-content'>
-        <span className='card-category' style={{ fontWeight: "bold" }}>
-          {category}
-        </span>
+      <div className='card-content'>
+        <span className='card-category'>{category}</span>
         <span className='card-title'>{title}</span>
         <p>{description}</p>
       </div>
-      <StarRating stars={rating} />
+      <StarRating rating={rating} />
       <div className='card-action'>
         <span className='price red-text'>
           {price} (-{discountPercentage}%)
