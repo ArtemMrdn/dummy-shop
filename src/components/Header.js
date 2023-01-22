@@ -5,11 +5,7 @@ function Header() {
         <a href='#' className='brand-logo'>
           Dummy Shop
         </a>
-        <ul id='nav-mobile' className='right hide-on-med-and-down'>
-          <li>
-            <a href='sass.html'>Repo</a>
-          </li>
-        </ul>
+        <ul id='nav-mobile' className='right hide-on-med-and-down'></ul>
       </div>
     </nav>
   );
