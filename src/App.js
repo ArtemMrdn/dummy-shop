@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Products from "./components/Products";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [product, setProduct] = useState([]);
@@ -16,6 +17,7 @@ function App() {
     <div className='App'>
       <Header />
       <Products product={product} />
+      <Footer />
     </div>
   );
 }
