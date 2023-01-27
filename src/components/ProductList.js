@@ -24,16 +24,16 @@ function ProductList(props) {
       </div>
       <StarRating rating={rating} />
       <div className='card-action'>
-        <span className={`${discountPercentage >= 15 ? "price-red" : "price"}`}>
-          {price} (-{discountPercentage}%)
-        </span>
-        {stock === 0 ? (
-          <button disabled className='btn'>
-            buy ({stock})
-          </button>
-        ) : (
-          <button className='btn'>buy ({stock})</button>
-        )}
+        <div className={`${discountPercentage >= 15 ? "price-red" : "price"}`}>
+          {price}
+          <span className='procentage'>(-{discountPercentage}%)</span>
+        </div>
+        <button
+          disabled={stock === 0}
+          className={`${stock === 0 ? "disabled-btn" : "btn"}`}
+        >
+          buy ({stock})
+        </button>
       </div>
     </div>
   );
