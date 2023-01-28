@@ -1,11 +1,13 @@
 function Header() {
   return (
-    <div className='header'>
-      <div>
-        <img className='logo' src='logo.jpg'></img>
+    <header className='header'>
+      <div className='wrapper'>
+        <div>
+          <img className='logo' src='logo.jpg' alt='Logo'></img>
+        </div>
+        <span>Dummy Shop</span>
       </div>
-      <a>Dummy Shop</a>
-    </div>
+    </header>
   );
 }
 

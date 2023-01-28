@@ -1,17 +1,17 @@
-import ProductList from "./ProductList";
+import ProductItem from "./ProductItem";
 
 function Products(props) {
-  const { product = [] } = props;
+  const { products = [] } = props;
   return (
-    <div className='products'>
-      {product.length ? (
-        product.map((product) => {
-          return <ProductList key={product.id} {...product} />;
+    <main className='products'>
+      {products.length > 0 ? (
+        products.map((products) => {
+          return <ProductItem key={products.id} {...products} />;
         })
       ) : (
         <h3>Nothing found</h3>
       )}
-    </div>
+    </main>
   );
 }
 

@@ -4,18 +4,16 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-nav {
-  padding: 0 15rem;
+  height: 100%;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
-  padding: 0 10%;
-  min-height: calc(100vh - 80px);
+  margin: 0 auto;
+  padding: 0 10px;
+  flex-grow: 1;
 }
 
 .card-image img {
@@ -25,10 +23,9 @@ nav {
 }
 
 .card {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
-  position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   border-radius: 20px;
@@ -37,8 +34,7 @@ nav {
 
 .card-content {
   flex: 1;
-  padding: 24px;
-  border-radius: 0 0 2px 2px;
+  padding: 20px;
 }
 
 .card-action {
@@ -47,7 +43,6 @@ nav {
   align-items: center;
   background-color: inherit;
   border-top: 1px solid rgba(160, 160, 160, 0.2);
-  position: relative;
   padding: 16px 24px;
 }
 
@@ -67,23 +62,17 @@ nav {
 .card-title {
   display: block;
   line-height: 32px;
-  margin-bottom: 8px;
+  margin-top: 8px;
   font-size: 24px;
   font-weight: 300;
 }
 
 .card-category {
   font-weight: bold;
-  border: 4px solid royalblue;
+  border: 2px solid royalblue;
   border-radius: 8px;
-  padding: 0 3%;
+  padding: 0 2%;
   color: royalblue;
-}
-
-a {
-  color: white;
-  font-size: 16px;
-  margin: 10px;
 }
 
 .price-red {
@@ -93,6 +82,8 @@ a {
 
 .App {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -100,6 +91,16 @@ a {
   background-color: black;
   padding: 30px 10%;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header span {
+  color: #fff;
+  font-size: 16px;
 }
 
 .procentage {
@@ -115,16 +116,11 @@ a {
   border: 1px solid white;
   padding: 10px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.disabled-btn {
-  font-size: 14px;
-  width: 110px;
-  background-color: grey;
-  color: #fff;
-  border-radius: 8px;
-  border: 1px solid white;
-  padding: 10px;
+.btn:hover {
+  background-color: rgb(37, 59, 128);
 }
 
 .logo {
@@ -141,4 +137,21 @@ a {
   background-color: black;
   font-size: 20px;
   padding: 30px 10%;
+}
+
+.container span {
+  color: #fff;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.btn:disabled {
+  background-color: gray;
+  cursor: default;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }

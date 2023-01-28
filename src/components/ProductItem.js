@@ -1,6 +1,6 @@
 import StarRating from "./StarRating";
 
-function ProductList(props) {
+function ProductItem(props) {
   const {
     thumbnail,
     title,
@@ -15,7 +15,7 @@ function ProductList(props) {
   return (
     <div className='card'>
       <div className='card-image'>
-        <img src={thumbnail} />
+        <img src={thumbnail} alt='Card' />
       </div>
       <div className='card-content'>
         <span className='card-category'>{category}</span>
@@ -28,10 +28,7 @@ function ProductList(props) {
           {price}
           <span className='procentage'>(-{discountPercentage}%)</span>
         </div>
-        <button
-          disabled={stock === 0}
-          className={`${stock === 0 ? "disabled-btn" : "btn"}`}
-        >
+        <button disabled={stock === 0} className='btn'>
           buy ({stock})
         </button>
       </div>
@@ -39,4 +36,4 @@ function ProductList(props) {
   );
 }
 
-export default ProductList;
+export default ProductItem;
