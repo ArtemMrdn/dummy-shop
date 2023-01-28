@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className='header'>
-      <div className='wrapper'>
+      <div className='header-content '>
         <div>
           <img className='logo' src='logo.jpg' alt='Logo'></img>
         </div>
