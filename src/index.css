@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 body {
-  margin: 0;
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -14,7 +15,7 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
   padding: 0 10%;
-  flex: 1 1 auto;
+  min-height: calc(100vh - 80px);
 }
 
 .card-image img {
@@ -60,7 +61,7 @@ nav {
 }
 
 .price {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-title {
@@ -87,21 +88,17 @@ a {
 
 .price-red {
   color: #f44336 !important;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .App {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .header {
   display: flex;
   background-color: black;
   padding: 30px 10%;
-  position: sticky;
-  z-index: 3;
   align-items: center;
 }
 
@@ -117,6 +114,7 @@ a {
   border-radius: 8px;
   border: 1px solid white;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .disabled-btn {
@@ -134,6 +132,7 @@ a {
   width: 25px;
   background: white;
   display: block;
+  border-radius: 4px;
 }
 
 .container {
