@@ -2,13 +2,16 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='container'>
-        <div>
-          <span>© 2023 Artem Muradian</span>
-        </div>
-        <div>
-          <span>Terms of use </span>
-          <span>Privacy policy </span>
-          <span>Contacts </span>
+        <div className='footer-content'>
+          <div className='footer-copyright'>
+            <span>© 2023</span>
+            <span>Artem Muradian</span>
+          </div>
+          <ul className='footer-list'>
+            <li>Terms of use </li>
+            <li>Privacy policy </li>
+            <li>Contacts </li>
+          </ul>
         </div>
       </div>
     </footer>
