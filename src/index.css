@@ -71,8 +71,8 @@ body {
   font-weight: bold;
   border: 2px solid royalblue;
   border-radius: 8px;
-  padding: 0 2%;
   color: royalblue;
+  padding: 5px 5px;
 }
 
 .price-red {
@@ -81,7 +81,7 @@ body {
 }
 
 .App {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -89,18 +89,19 @@ body {
 .header {
   display: flex;
   background-color: black;
-  padding: 30px 10%;
   align-items: center;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding: 30px 0;
 }
 
 .header span {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .procentage {
@@ -129,6 +130,7 @@ body {
   background: white;
   display: block;
   border-radius: 4px;
+  margin: 5px;
 }
 
 .container {
@@ -150,8 +152,9 @@ body {
   cursor: default;
 }
 
-.wrapper {
+.header-content {
   display: flex;
   align-items: center;
-  margin: 10px;
+  max-width: 1200px;
+  padding-inline-start: 10%;
 }

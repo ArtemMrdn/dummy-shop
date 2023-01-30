@@ -1,5 +1,4 @@
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 
 const StarRating = ({ rating }) => {
   const RatingStar = Array.from({ length: 5 }, (elem, index) => {
@@ -8,11 +7,11 @@ const StarRating = ({ rating }) => {
     return (
       <span key={index}>
         {rating >= index + 1 ? (
-          <FaStar className='icon' />
+          <BsStarFill className='icon' />
         ) : rating >= number ? (
-          <FaStarHalfAlt className='icon' />
+          <BsStarHalf className='icon' />
         ) : (
-          <AiOutlineStar className='icon' />
+          <BsStar className='icon' />
         )}
       </span>
     );
