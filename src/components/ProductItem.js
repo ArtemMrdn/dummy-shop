@@ -26,7 +26,7 @@ function ProductItem(props) {
       <div className='card-action'>
         <div className={`${discountPercentage >= 15 ? "price-red" : "price"}`}>
           {price}
-          <span className='procentage'>(-{discountPercentage}%)</span>
+          <span className='percentage'>(-{discountPercentage}%)</span>
         </div>
         <button disabled={stock === 0} className='btn'>
           buy ({stock})
