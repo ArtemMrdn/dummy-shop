@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dummy-shop/static/css/main.84386149.css",
-    "main.js": "/dummy-shop/static/js/main.ed82f170.js",
+    "main.css": "/dummy-shop/static/css/main.5052b54d.css",
+    "main.js": "/dummy-shop/static/js/main.a4933de8.js",
     "index.html": "/dummy-shop/index.html",
-    "main.84386149.css.map": "/dummy-shop/static/css/main.84386149.css.map",
-    "main.ed82f170.js.map": "/dummy-shop/static/js/main.ed82f170.js.map"
+    "main.5052b54d.css.map": "/dummy-shop/static/css/main.5052b54d.css.map",
+    "main.a4933de8.js.map": "/dummy-shop/static/js/main.a4933de8.js.map"
   },
   "entrypoints": [
-    "static/css/main.84386149.css",
-    "static/js/main.ed82f170.js"
+    "static/css/main.5052b54d.css",
+    "static/js/main.a4933de8.js"
   ]
 }
